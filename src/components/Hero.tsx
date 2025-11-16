@@ -85,14 +85,25 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
-            <button className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition shadow-sm hover:shadow">
-              <FolderOpen className="w-5 h-5" /> View Projects
-            </button>
+  
+  {/* VIEW PROJECTS → Scroll to section */}
+  <a
+    href="#projects"
+    className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition shadow-sm hover:shadow"
+  >
+    <FolderOpen className="w-5 h-5" /> View Projects
+  </a>
 
-            <button className="flex items-center gap-2 px-6 py-3 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition shadow-sm hover:shadow">
-              <Mail className="w-5 h-5" /> Contact Me
-            </button>
-          </div>
+  {/* CONTACT ME → Scroll to contact section */}
+  <a
+    href="#contact"
+    className="flex items-center gap-2 px-6 py-3 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition shadow-sm hover:shadow"
+  >
+    <Mail className="w-5 h-5" /> Contact Me
+  </a>
+
+</div>
+
         </div>
 
         {/* IMAGE */}
